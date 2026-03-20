@@ -68,9 +68,9 @@ export default function Home() {
     <div className="min-h-screen bg-[#0a0a0a] text-white font-sans">
 
       {/* ── HERO ──────────────────────────────────────── */}
-      <header id="home" className="relative overflow-hidden min-h-[90vh] flex flex-col">
+      <header id="home" className="relative overflow-hidden min-h-[85vh] flex flex-col">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-10 -right-20 w-[600px] h-[600px] md:w-[700px] md:h-[700px]">
+          <div className="absolute -top-10 -right-20 w-[600px] h-[600px] md:w-[700px] md:h-[700px] lg:w-[900px] lg:h-[900px]">
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#6F0004] via-red-600 to-orange-900 opacity-60 blur-[2px]" />
             <div className="absolute left-0 top-0 h-full w-[55%] bg-gradient-to-l from-transparent via-[#0a0a0a]/20 to-[#0a0a0a]" />
           </div>
@@ -80,27 +80,27 @@ export default function Home() {
           <NavBar />
 
           <div className="relative flex flex-col lg:flex-row lg:items-end min-h-[85vh] lg:min-h-[80vh]">
-            <div className="absolute inset-x-0 top-0 bottom-0 lg:inset-x-auto lg:inset-y-0 lg:right-0 lg:w-[46vw] lg:max-w-[600px] pointer-events-none">
+            <div className="absolute inset-x-0 top-0 bottom-0 lg:inset-x-auto lg:inset-y-0 lg:right-30 lg:w-[46vw] lg:max-w-[600px] pointer-events-none">
               <Image src="/profile.png"
                 fill priority
                 alt="Profile Picture"
                 className="object-contain object-center lg:object-bottom opacity-80 lg:opacity-100"
                 sizes="(max-width: 1024px) 100vw, 46vw" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 lg:via-[#0a0a0a]/10 to-transparent" />
+              <div className="absolute inset-0" />
             </div>
 
-            <div className="relative z-30 px-6 lg:px-16 pb-16 lg:pb-32 pt-32 lg:pt-8 w-full lg:w-1/2 flex flex-col items-center text-center lg:items-start lg:text-left mt-auto lg:mt-0">
+            <div className="relative z-30 px-6 lg:px-16 pb-24 lg:pb-48 pt-28 lg:pt-4 w-full lg:w-1/2 flex flex-col items-center text-center lg:items-start lg:text-left mt-auto lg:mt-5">
               <p className="text-xs lg:text-sm uppercase tracking-[0.3em] text-white/70 mb-4">
                 Software Engineering Student
               </p>
-              <h1 className="text-5xl lg:text-[clamp(3rem,8vw,8rem)] font-black leading-[1.1] lg:leading-[0.9] tracking-tight mb-6">
+              <h1 className="text-5xl lg:text-[clamp(3rem,7vw,7rem)] font-black leading-[1.1] lg:leading-[0.9] tracking-tight mb-6">
                 Hi, I'm<br className="hidden lg:block" /><span className="text-white"> Yatichapat</span>
               </h1>
-              <div className="max-w-sm md:max-w-md lg:ml-1">
+              <div className="max-w-lg lg:ml-1">
                 <p className="text-lg text-white/60 leading-relaxed mb-2 font-medium tracking-wide">
                   I turn ideas into interfaces.
                 </p>
-                <p className="text-md text-white/50 leading-relaxed">
+                <p className="text-sm text-white/50 leading-relaxed">
                   A Software Engineering student who loves crafting clean UIs,
                   digging into data, and connecting the dots between frontend and backend.
                   Still learning, always building.
@@ -259,9 +259,27 @@ export default function Home() {
             Interested in working together? I'm open to internships, freelance projects, and collaborations.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="mailto:yatichapat.d@gmail.com" className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full text-sm font-semibold hover:bg-orange-400 hover:text-white transition-all">Email Me</a>
-            <a href="https://www.linkedin.com/in/yatichapat-dechaeamsakul-507864243/" target="_blank" rel="noreferrer" className="flex items-center gap-2 border border-white/20 text-white px-6 py-3 rounded-full text-sm font-semibold hover:border-orange-500 hover:text-orange-400 transition-all">LinkedIn</a>
-            <a href="https://github.com/yatichapat" target="_blank" rel="noreferrer" className="flex items-center gap-2 border border-white/20 text-white px-6 py-3 rounded-full text-sm font-semibold hover:border-orange-500 hover:text-orange-400 transition-all">GitHub</a>
+            <a
+              href="mailto:yatichapat.d@gmail.com"
+              aria-label="Email me"
+              className="flex items-center justify-center w-14 h-14 border border-white/20 rounded-full hover:border-orange-700 transition-all"
+            >
+              <Image src="/gmail.png" alt="Gmail" width={25} height={25} />
+            </a>
+            <a href="https://www.linkedin.com/in/yatichapat-dechaeamsakul-507864243/" 
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center justify-center w-14 h-14 border border-white/20 rounded-full hover:border-orange-500 transition-all">
+                <Image src="/linkedin-icon.svg" alt="LinkedIn" width={25} height={25} />
+              </a>
+            <a href="https://github.com/yatichapat" 
+            aria-label="GitHub"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center justify-center w-14 h-14 border border-white/20 rounded-full hover:border-orange-500 transition-all">
+              <Image src="/github-icon.svg" alt="GitHub" width={25} height={25} />
+            </a>
           </div>
         </section>
       </main>
