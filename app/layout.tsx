@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio Template",
-  description: "Personal portfolio website template built with Next.js",
+  title: "Portfolio - Yatichapat",
+  description: "My personal portfolio website built with Next.js",
 };
 
 export default function RootLayout({

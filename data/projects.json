@@ -1,0 +1,37 @@
+[
+  {
+    "title": "KU-Volunteer",
+    "description": "A web application for Kasetsart University students to find, apply for, and track volunteer opportunities. The system helps students fulfill their required volunteer hours by category while allowing staff to manage activities and verify participation.",
+    "stack": "Next.js · TypeScript · PostgreSQL · Jest",
+    "image": "/kuvolunteer.svg",
+    "role": "Frontend Developer"
+  },
+  {
+    "title": "KU Hackathon 2024 (core team)",
+    "description": "This project was developed as part of a competition organized by Kasetsart University. The event is a technology-focused innovation fair that emphasizes the development and application of technology to solve real-world problems within the university. Students from various disciplines with an interest and expertise in technology participate in the competition, collaborating to develop ideas and projects aimed at addressing challenges faced by Kasetsart University.",
+    "stack": "Figma",
+    "image": "/hackathon2024.svg",
+    "role": "UI/UX Designer"
+  },
+  {
+    "title": "KU JobFair 2026",
+    "description": "KU Jobfair 2026 is a mobile web application developed to support activity tracking during the university job fair event. Users can check in at booths, collect stamps, and redeem rewards. The system also features an organizer dashboard for managing booths, tracking participation, and generating reports.",
+    "stack": "Figma",
+    "image": "/kujobfair.svg",
+    "role": "UI/UX Designer"
+  },
+  {
+    "title": "KUTech BootCamp",
+    "description": "KUTech BootCamp is a mobile web application developed to support activity tracking during the university job fair event. Users can check in at booths, collect stamps, and redeem rewards. The system also features an organizer dashboard for managing booths, tracking participation, and generating reports.",
+    "stack": "Figma",
+    "image": "/bootcampkutech.svg",
+    "role": "UI/UX Designer"
+  },
+  {
+    "title": "KU-MED",
+    "description": "KU-MED is a website developed to support medical students at Kasetsart University, following the establishment of the university's new medical education program. The platform is designed to provide essential information and digital support for students as the medical curriculum is newly introduced.",
+    "stack": "Figma",
+    "image": "/kumed.svg",
+    "role": "UI/UX Designer"
+  }
+]
