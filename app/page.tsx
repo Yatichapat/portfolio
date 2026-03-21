@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import NavBar from "../components/NavBar";
 import ProjectDescription from "../components/ProjectDescription";
@@ -151,13 +152,6 @@ export default function Home() {
               data to find insights, or training a machine learning model, I enjoy connecting the dots
               between different disciplines to create something that works and looks great.
             </p>
-            <p className="text-white/50 text-md leading-relaxed">Let's have a look at some of my work</p>
-            <a href="#projects" className="self-start flex items-center gap-2 bg-orange-500 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-orange-400 transition-all">
-              View My Work
-              <span className="w-5 h-5 rounded-full bg-white/20 inline-flex items-center justify-center">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 9L9 1M9 1H3M9 1V7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg>
-              </span>
-            </a>
           </div>
         </section>
 
@@ -168,12 +162,22 @@ export default function Home() {
               <p className="text-orange-500 text-xs font-bold uppercase tracking-widest mb-2">Selected Work</p>
               <h2 className="text-3xl md:text-4xl font-black">Featured Projects</h2>
             </div>
-            <p className="text-white/30 text-sm hidden md:block">Click any card for details</p>
           </div>
 
           {/* Scrolling Bento Grid Layout */}
           <div className="overflow-hidden w-full relative pb-4">
-            <div className="flex w-max animate-scroll-left">
+            {/* Center Button Overlay */}
+            <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-transparent to-[#0a0a0a] opacity-10" />
+              <Link
+                href="/projects"
+                className="pointer-events-auto relative z-30 bg-orange-500 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-orange-400 hover:scale-105 transition-transform duration-300 shadow-[0_0_40px_rgba(249,115,22,0.4)] flex items-center gap-3"
+              >
+                View All My Work
+              </Link>
+            </div>
+
+            <div className="flex w-max animate-scroll-left pointer-events-none opacity-50">
               {[0, 1].map((gridIndex) => (
                 <div
                   key={`grid-group-${gridIndex}`}
@@ -186,15 +190,11 @@ export default function Home() {
                   {loopedProjects.map((project, i) => {
                     const gridClass = BENTO_CLASSES[i % BENTO_CLASSES.length];
                     return (
-                      <button
+                      <div
                         key={`bento-${gridIndex}-${project.title}-${i}`}
-                        onClick={() => setSelectedProject(project)}
                         className={`
                           group relative flex-shrink-0 ${gridClass} h-full w-full
                           rounded-2xl overflow-hidden border border-white/5 bg-[#111]
-                          cursor-pointer transition-all duration-300 ease-out
-                          hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(249,115,22,0.18)]
-                          hover:border-orange-500/40 focus:outline-none
                         `}
                       >
                         {/* Background: image or gradient placeholder */}
@@ -219,12 +219,7 @@ export default function Home() {
                         {/* Orange glow on hover */}
                         <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                        {/* "View Details" pill — appears on hover */}
-                        <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-all duration-200 translate-y-1 group-hover:translate-y-0">
-                          <span className="bg-orange-500 text-white text-[10px] font-bold px-3 py-1 rounded-full">
-                            View Details
-                          </span>
-                        </div>
+
 
                         {/* Card text at bottom */}
                         <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
@@ -242,7 +237,7 @@ export default function Home() {
                             className="text-[11px] text-white/40 mt-0.5 line-clamp-1"
                           />
                         </div>
-                      </button>
+                      </div>
                     );
                   })}
                 </div>
@@ -367,9 +362,6 @@ export default function Home() {
         }
         .animate-scroll-left {
           animation: scroll-left 120s linear infinite;
-        }
-        .animate-scroll-left:hover {
-          animation-play-state: paused;
         }
 
         .line-clamp-1 {
