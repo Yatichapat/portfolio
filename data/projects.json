@@ -4,34 +4,60 @@
     "description": "A web application for Kasetsart University students to find, apply for, and track volunteer opportunities. The system helps students fulfill their required volunteer hours by category while allowing staff to manage activities and verify participation.",
     "stack": "Next.js · TypeScript · PostgreSQL · Jest",
     "image": "/kuvolunteer.svg",
-    "role": "Frontend Developer"
+    "role": "Frontend Developer",
+    "content": "## Project overview\n\nKU Volunteer is a web application that helps Kasetsart University students easily find and join volunteer activities. Students can browse opportunities, apply online, check in their attendance, and track their participation, all in one place.\n\nStaff and organizers can post activities, manage applications, and verify participation without the manual paperwork. The system uses a Django backend and a Next.js frontend, with secure JWT authentication and optional Google login, to provide a reliable experience for everyone involved.\n\n## Project Links\n\n### 🎬 Sprint Review Videos\n\n- Playlist: [Playlists](https://youtube.com/playlist?list=PL-agTHiNrXJK620Vo5P6VZCPbh5BCq6Qu&si=EKEUJKmh41vWM9dX)\n  - Sprint 1: [Watch on YouTube](https://www.youtube.com/watch?v=TEeooISUzhA)\n  - Sprint 2: [Watch on Youtube](https://youtu.be/Qx_UI-_u6G8)\n  - Sprint 3: [Watch on Youtube](https://www.youtube.com/watch?v=0Lb2iRNIzEw&list=PL-agTHiNrXJK620Vo5P6VZCPbh5BCq6Qu&index=3)\n  - Sprint 4: [Watch on Youtube](https://www.youtube.com/watch?v=FWr_dzA1gAQ&list=PL-agTHiNrXJK620Vo5P6VZCPbh5BCq6Qu&index=4)\n  - Sprint 5: [Watch on Youtube](https://youtu.be/KwegxIw0AKE?si=0-jX-mQj4y5vTg6p)\n\n### 📋 Project Proposal:\n[View Proposal](https://docs.google.com/document/d/1dSgomn033W_DnCxLYvI9i7PCp6DdOQVSv9pmEwO-aZQ/edit?usp=sharing)\n\n### 🎨 UI/UX Design:\n[View Figma](https://www.figma.com/design/xlDIr7uXlz8cMf5fttJkrg/KU-Volunteer?node-id=0-1&p=f&t=nzDc8F16H0CUbju9-0)\n\n### 📚 GitHub Repository:\n[View GitHub](https://github.com/natawipa/ku-volunteer)\n\n### 📊 Project Management:\n[View Jira](https://ku-team-f030w3d7.atlassian.net/jira/software/projects/KV/boards/35/backlog)\n\n## Objectives\nThe main goal of the KU Volunteer is to fix the current problems by creating one simple online system for all volunteer activities.\n- **Provide one platform for all volunteer opportunities:** This web-based application will solve the problem of information being spread out in many different spots, making sure all students can see and access every available activity.\n- **Help students track required hours by category:** To give students easy-to-use tools to keep an eye on their required hours. This means showing them a clear and up-to-date view of how many hours they have finished and how many they still need for each type of volunteering, helping them make good choices about which events to join.\n- **Improve transparency and management for staff:** To greatly reduce the extra work for event organizers and university staff by handling jobs like sign-ups, attendance lists, and checking hours automatically.\n\n## My Role/Responsibilities\n**Role: Frontend Developer / UI-UX Contributor**\n- Designed and implemented key frontend features for the KU Volunteer web application using Next.js.\n- Developed core user interfaces including the Home screen, Admin dashboard, and activity management pages.\n- Implemented search and filtering functionality to help students easily find volunteer activities by category and requirements.\n- Translated UX/UI designs into responsive and reusable frontend components, ensuring a consistent user experience across pages.\n- Improved usability by designing clear user flows for browsing activities, applying, and tracking volunteer hours.\n- Designed and implemented a documentation interface to enable users to download required documents.\n- Collaborated with backend developers to integrate APIs for activity data, authentication, and user management."
   },
   {
     "title": "KU Hackathon 2024 (core team)",
-    "description": "This project was developed as part of a competition organized by Kasetsart University. The event is a technology-focused innovation fair that emphasizes the development and application of technology to solve real-world problems within the university. Students from various disciplines with an interest and expertise in technology participate in the competition, collaborating to develop ideas and projects aimed at addressing challenges faced by Kasetsart University.",
+    "description": "This project was developed as part of a competition organized by Kasetsart University. The event is a technology-focused innovation fair that emphasizes the development and application of technology to solve real-world problems within the university. Students from various disciplines with an interest and expertise in technology participate in the competition, collaborating to develop ideas and projects aimed at addressing challenges faced by Kasetsart University.",
     "stack": "Figma",
     "image": "/hackathon2024.svg",
-    "role": "UI/UX Designer"
+    "role": "UI/UX Designer",
+    "content": "## Project overview\n\nThis project was developed as part of a competition organized by **Kasetsart University**. The event is a technology-focused innovation fair that emphasizes the development and application of technology to solve real-world problems within the university. Students from various disciplines with an interest and expertise in technology participate in the competition, collaborating to develop ideas and projects aimed at addressing challenges faced by Kasetsart University.\n\n## 📌 Project Link\n\nFigma: \n\nhttps://www.figma.com/design/NEgi95yg3GVLQNEgajva35/Hackathon?node-id=0-1&p=f&t=COoHro6H9uabmB6H-0\n\n## Objectives\n\nThe objective of this project is to design and propose a technology-based solution that addresses real problems within Kasetsart University by applying innovative ideas and modern technologies. The project aims to encourage interdisciplinary collaboration among students and to demonstrate how technology can be effectively used to improve systems, services, or experiences within the university.\n\n## My Role/Responsabilities\n\n**Role: UX/UI Designer**\n\nI was responsible for designing a user-centered interface and experience for the project. My role focused on understanding user needs, defining user flows, and creating intuitive and accessible interface designs. The goal was to ensure that the system is easy to use, visually engaging, and effectively supports users in interacting with the proposed solution."
   },
   {
     "title": "KU JobFair 2026",
     "description": "KU Jobfair 2026 is a mobile web application developed to support activity tracking during the university job fair event. Users can check in at booths, collect stamps, and redeem rewards. The system also features an organizer dashboard for managing booths, tracking participation, and generating reports.",
     "stack": "Figma",
     "image": "/kujobfair.svg",
-    "role": "UI/UX Designer"
+    "role": "UI/UX Designer",
+    "content": "## Project overview\n\n**KU Jobfair 2026** is a mobile web application developed to support activity tracking during the university job fair event. The system allows students to scan QR codes at different booths to record their participation. Students are required to complete a predefined number of booth scans in order to receive activity hours.\n\nAt the same time, the system tracks student participation in real time, enabling event organizers to monitor the number of students attending the event and visiting booths efficiently.\n\n## 📌 Project Link\n\nFigma: \n\nhttps://www.figma.com/design/oK9Nbmz2Z9Dce7rQuZ1dnA/KU-Job-Fair-2026?node-id=0-1&p=f&t=8QFPR1T8W4hRtzzQ-0\n\n## Objectives\n\n**The objective of this project** is to develop a mobile-friendly web system that accurately tracks student participation during the KU Jobfair event. The system aims to ensure fair activity-hour validation by requiring students to scan designated booths, while also providing real-time attendance data to organizers for effective event monitoring and management.\n\n## My Role/Responsabilities\n\n**Role: UX/UI Designer**\n\nI was responsible for designing the user experience and user interface for a mobile web application used by students and event organizers. The design focused on simplicity, speed, and clarity to ensure that students could easily scan booths and track their progress, while organizers could monitor participation in real time."
   },
   {
     "title": "KUTech BootCamp",
     "description": "KUTech BootCamp is a mobile web application developed to support activity tracking during the university job fair event. Users can check in at booths, collect stamps, and redeem rewards. The system also features an organizer dashboard for managing booths, tracking participation, and generating reports.",
     "stack": "Figma",
     "image": "/bootcampkutech.svg",
-    "role": "UI/UX Designer"
+    "role": "UI/UX Designer",
+    "content": "## Project overview\n\nThis project is a website for activities organized to enhance and develop technological skills for secondary school students. It aims to provide students with a stronger understanding of basic programming concepts, as well as to offer guidance on further education pathways in the field of technology for their future.\n\n## Project Link:\n\nFigma:\n\nhttps://www.figma.com/design/3pIr3KQJW4GXA0dvwZkR2X/BootCamp?node-id=0-1&p=f&t=9NU2e7KnuS3txx6m-0\n\n## Objectives\n\n- **To enhance technological skills** of secondary school students through interactive and educational activities.\n- **To improve students’ understanding of basic programming concepts** by providing accessible and beginner-friendly learning content.\n- **To encourage interest in technology-related fields** among secondary school students.\n- **To provide guidance on future education pathways in technology**, helping students plan their academic direction.\n\n## Role/ Responsabilities\n\n- Conduct user analysis to understand the needs and behaviors of secondary school students.\n- Design user flows and information architecture for the website.\n- Ensure the interface is easy to use for beginner-level users.\n- Collaborate with developers to ensure design feasibility and consistency."
   },
   {
     "title": "KU-MED",
     "description": "KU-MED is a website developed to support medical students at Kasetsart University, following the establishment of the university's new medical education program. The platform is designed to provide essential information and digital support for students as the medical curriculum is newly introduced.",
     "stack": "Figma",
     "image": "/kumed.svg",
-    "role": "UI/UX Designer"
+    "role": "UI/UX Designer",
+    "content": "## Project overview\n\n**KU-MED** is a website developed to support medical students at Kasetsart University, following the establishment of the university’s new medical education program. The platform is designed to provide essential information and digital support for students as the medical curriculum is newly introduced.\n\n## Project Link:\n\nFigma:\n\nhttps://www.figma.com/design/HaAJFLVU1382XMxkozfU6F/myku-med?node-id=165-169&t=8QFPR1T8W4hRtzzQ-0\n\n## Objectives\n\n**The objective of this project** is to create an accessible and user-friendly website that supports medical students by providing clear academic information and resources, especially during the initial phase of the newly established medical program.\n\n## Role/ Responsabilities\n\n**Role: UX/UI Designer**\n\nI was responsible for designing a user-centered interface for the KU-MED website. The focus was on clarity, usability, and accessibility to ensure that medical students could easily find essential information and navigate the platform with minimal effort."
+  },
+  {
+    "title": "NoisyDust",
+    "description": "Nang-Rong-Yang-Rao is a web-based environmental monitoring API system that collects, stores, and visualizes air quality and sound level data from Bangkok district. It provides real-time access and predictive insights based on collected values such as: PM2.5 PM10 AQI and Sound levels",
+    "stack": "ESP32, Node-RED, FlaskAPI",
+    "image": "/noisydust.svg",
+    "role": "IOT"
+  },
+  {
+    "title": "Rain Forecast",
+    "description": "Rain Forecast is a machine learning project that analyzes complex data streams from KidBright sensors and WeatherAPI to build accurate rain prediction models. Using time-series analysis and high-dimensional data techniques, it enhances localized weather forecasting with a focus on rain pattern detection.",
+    "stack": "Python, RapidMiner, LSTM",
+    "image": "/rainforecast.svg",
+    "role": "Machine Learning"
+  },
+  {
+    "title": "Apocalypse Cooker",
+    "description": "Apocalypse Cooker is a cooking game with an apocalypse theme, where the chef opens the restaurant to send food to the survivors of a zombie horde in the quarantine zone around the city. The chef, who is a player, must avoid zombies who burst into the restaurants as possible while he has to cook food for the survivors.",
+    "stack": "Python, Pygame",
+    "image": "/apocalypsecooker.svg",
+    "role": "Game Developer"
   }
 ]

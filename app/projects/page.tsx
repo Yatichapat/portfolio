@@ -5,6 +5,8 @@ import Link from "next/link";
 import ProjectDescription from "@/components/ProjectDescription";
 import projects from "@/data/projects.json";
 import NavBar from "@/components/NavBar";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 type Project = {
   title: string;
@@ -14,6 +16,7 @@ type Project = {
   link?: string;
   details?: string;
   role?: string;
+  content?: string;
 };
 
 const PROJECTS = projects as Project[];
@@ -136,7 +139,7 @@ export default function ProjectsPage() {
           onClick={closeModal}
         >
           <div
-            className="relative bg-[#141414] border border-white/10 rounded-3xl w-full max-w-lg max-h-[90vh] overflow-y-auto shadow-2xl"
+            className="relative bg-[#141414] border border-white/10 rounded-3xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             {selectedProject.image && (
@@ -170,6 +173,22 @@ export default function ProjectsPage() {
 
               {selectedProject.details && (
                 <p className="text-white/40 text-sm leading-relaxed mb-6">{selectedProject.details}</p>
+              )}
+
+              {selectedProject.content && (
+                <div className={`mt-8 mb-6 border-t border-white/10 pt-6 prose prose-invert max-w-none text-white/70 
+                  [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:text-white [&>h2]:mb-4 [&>h2]:mt-8
+                  [&>h3]:text-xl [&>h3]:font-semibold [&>h3]:text-white/90 [&>h3]:mb-3 [&>h3]:mt-6
+                  [&>p]:mb-4 [&>p]:leading-relaxed
+                  [&>ul]:list-disc [&>ul]:pl-5 [&>ul]:mb-6 [&>ul>li]:mb-2 
+                  [&>ol]:list-decimal [&>ol]:pl-5 [&>ol]:mb-6 [&>ol>li]:mb-2
+                  [&>a]:text-orange-400 [&>a]:underline hover:[&>a]:text-orange-300
+                  [&>strong]:text-white [&>strong]:font-bold
+                `}>
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {selectedProject.content}
+                  </ReactMarkdown>
+                </div>
               )}
 
               <div className="border-t border-white/10 pt-4 mt-2">
