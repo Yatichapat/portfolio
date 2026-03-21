@@ -84,7 +84,7 @@ export default function Home() {
           <NavBar />
 
           <div className="relative flex flex-col lg:flex-row lg:items-end min-h-[85vh] lg:min-h-[80vh]">
-            <div className="absolute inset-x-0 top-0 bottom-0 lg:inset-x-auto lg:inset-y-0 lg:right-30 lg:w-[46vw] lg:max-w-[600px] pointer-events-none">
+            <div className="absolute inset-x-4 top-0 bottom-0 lg:inset-x-auto lg:inset-y-0 lg:right-30 lg:w-[46vw] lg:max-w-[600px] pointer-events-none translate-y-14 lg:translate-y-16">
               <Image src="/profile.png"
                 fill priority
                 alt="Profile Picture"
@@ -93,7 +93,7 @@ export default function Home() {
               <div className="absolute inset-0" />
             </div>
 
-            <div className="relative z-30 px-6 lg:px-16 pb-24 lg:pb-48 pt-28 lg:pt-4 w-full lg:w-1/2 flex flex-col items-center text-center lg:items-start lg:text-left mt-auto lg:mt-5">
+            <div className="relative z-30 px-6 lg:px-16 pb-24 lg:pb-48 pt-28 lg:pt-24 w-full lg:w-1/2 flex flex-col items-center text-center lg:items-start lg:text-left mt-auto lg:mt-5">
               <p className="text-xs lg:text-sm uppercase tracking-[0.3em] text-white/70 mb-4">
                 Software Engineering Student
               </p>

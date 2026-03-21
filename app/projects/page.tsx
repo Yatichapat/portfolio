@@ -43,9 +43,9 @@ export default function ProjectsPage() {
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white font-sans flex flex-col">
-      {/* < NavBar /> */}
+      <NavBar />
 
-      <main className="px-8 md:px-16 py-12 flex-grow">
+      <main className="px-8 md:px-16 pt-32 pb-12 flex-grow">
         <div className="mb-6 inline-block">
           <Link href="/#home" className="inline-flex items-center gap-2 text-sm font-semibold text-white/60 hover:text-white bg-white/5 hover:bg-white/10 px-4 py-2 rounded-full transition-all">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
