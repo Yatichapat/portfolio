@@ -25,7 +25,7 @@
   },
   {
     "title": "KUTech BootCamp",
-    "description": "KUTech BootCamp is a mobile web application developed to support activity tracking during the university job fair event. Users can check in at booths, collect stamps, and redeem rewards. The system also features an organizer dashboard for managing booths, tracking participation, and generating reports.",
+    "description": "KUTech BootCamp is a web application developed to support activity tracking during the event. Users can check in at each booths, collect stamps, and redeem rewards. The system also features an staff dashboard to display competition scoring, tracking participation, and generating reports.",
     "stack": "Figma",
     "image": "/bootcampkutech.svg",
     "role": "UI/UX Designer",
@@ -44,6 +44,7 @@
     "description": "Nang-Rong-Yang-Rao is a web-based environmental monitoring API system that collects, stores, and visualizes air quality and sound level data from Bangkok district. It provides real-time access and predictive insights based on collected values such as: PM2.5 PM10 AQI and Sound levels",
     "stack": "ESP32, Node-RED, FlaskAPI",
     "image": "/noisydust.svg",
+    "link": "https://github.com/Fahsairvw/Nang-Rong-Yang-Rao.git",
     "role": "IOT"
   },
   {
@@ -55,9 +56,11 @@
   },
   {
     "title": "Apocalypse Cooker",
-    "description": "Apocalypse Cooker is a cooking game with an apocalypse theme, where the chef opens the restaurant to send food to the survivors of a zombie horde in the quarantine zone around the city. The chef, who is a player, must avoid zombies who burst into the restaurants as possible while he has to cook food for the survivors.\n\nFor more details, please check the [GitHub repository](https://github.com/Yatichapat/apocalypse-cooker.git).",
+    "description": "Apocalypse Cooker is a cooking game with an apocalypse theme, where the chef opens the restaurant to send food to the survivors of a zombie horde in the quarantine zone around the city. The player must avoid zombies that burst into the restaurant while still preparing food for the survivors.",
     "stack": "Python, Pygame",
     "image": "/apocalypsecooker.svg",
-    "role": "Game Developer"
+    "role": "Game Developer",
+    "link": "https://github.com/Yatichapat/apocalypse-cooker.git",
+    "content": "## Project overview\n\nApocalypse Cooker is a cooking game set in an apocalypse-themed restaurant. The player manages food preparation for survivors while avoiding zombies that break into the restaurant. The game focuses on fast decision-making, survival pressure, and time management.\n\n## More details\n\n[View GitHub Repository](https://github.com/Yatichapat/apocalypse-cooker.git)"
   }
 ]
