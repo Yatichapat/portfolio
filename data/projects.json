@@ -55,7 +55,7 @@
   },
   {
     "title": "Apocalypse Cooker",
-    "description": "Apocalypse Cooker is a cooking game with an apocalypse theme, where the chef opens the restaurant to send food to the survivors of a zombie horde in the quarantine zone around the city. The chef, who is a player, must avoid zombies who burst into the restaurants as possible while he has to cook food for the survivors.",
+    "description": "Apocalypse Cooker is a cooking game with an apocalypse theme, where the chef opens the restaurant to send food to the survivors of a zombie horde in the quarantine zone around the city. The chef, who is a player, must avoid zombies who burst into the restaurants as possible while he has to cook food for the survivors.\n\nFor more details, please check the [GitHub repository](https://github.com/Yatichapat/apocalypse-cooker.git).",
     "stack": "Python, Pygame",
     "image": "/apocalypsecooker.svg",
     "role": "Game Developer"
